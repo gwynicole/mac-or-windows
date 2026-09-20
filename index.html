@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Little Question For You ❤️</title>
+  <meta name="description" content="A little date invitation made with love." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main>
+    <section class="screen active" id="welcome">
+      <div class="envelope-wrap">
+        <div class="sparkle s1">✦</div>
+        <div class="sparkle s2">✧</div>
+        <div class="envelope">
+          <div class="envelope-flap"></div>
+          <div class="letter">
+            <span>For you</span>
+            <strong>♥</strong>
+          </div>
+        </div>
+      </div>
+
+      <p class="eyebrow">A very important question</p>
+      <h1>Hey, <span class="editable">mica</span>...</h1>
+      <p class="subtext">I made you a tiny website because asking you out deserved a little more effort than a chat (lagi naman hehe). ♡</p>
+      <button class="primary" onclick="showScreen('question')">Open your letter <span>→</span></button>
+    </section>
+
+    <section class="screen" id="question">
+      <div class="question-card">
+        <div class="tiny-heart">♥</div>
+        <p class="eyebrow">So here goes...</p>
+        <h2>Will you go on a<br><em>date</em> with me?</h2>
+        <p class="subtext">Just you, me, some good food, and hopefully a really good time.</p>
+
+        <div class="buttons">
+          <button class="yes-btn" onclick="sayYes()">YES, ABSOLUTELY 💗</button>
+          <button class="no-btn" id="noBtn">No</button>
+        </div>
+        <p class="hint" id="hint">Choose wisely... 👀</p>
+      </div>
+    </section>
+
+    <section class="screen" id="yes">
+      <div class="confetti-layer" id="confetti"></div>
+      <div class="success-icon">♥</div>
+      <p class="eyebrow">IT'S A DATE!</p>
+      <h2>Yay, you said yes. 🥹</h2>
+      <p class="subtext">Okay, now let me tell you what I have planned...</p>
+
+      <div class="date-card">
+        <div class="date-top">
+          <span>OUR LITTLE DATE</span>
+          <span>♡</span>
+        </div>
+        <div class="date-details">
+          <div><span class="icon">📅</span><div><small>WHEN</small><strong>Monday, September 21</strong></div></div>
+          <div><span class="icon">🕐</span><div><small>TIME</small><strong>3:00 PM</strong></div></div>
+          <div><span class="icon">📍</span><div><small>WHERE</small><strong>Makati</strong></div></div>
+        </div>
+      </div>
+
+      <button class="secondary" onclick="showScreen('plan')">See the plan ✨</button>
+    </section>
+
+    <section class="screen" id="plan">
+      <p class="eyebrow">THE PLAN</p>
+      <h2>A few hours<br><em>just for us.</em></h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="time">3:00</div>
+          <div class="dot">🍕</div>
+          <div><strong>Late Lunch/Early Dinner</strong><p>Crosta Pizza.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">4:30</div>
+          <div class="dot">🍡</div>
+          <div><strong>Dessert</strong><p>Mango Mochi or Anywhere you want :) .</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">5:30</div>
+          <div class="dot">☕</div>
+          <div><strong>Cafe</strong><p>LFG to find a job HAHAHA.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">???</div>
+          <div class="dot">🌙</div>
+          <div><strong>Walk</strong><p>Along our favorite spot in Makati.</p></div>
+        </div>
+      </div>
+
+      <button class="primary" onclick="showScreen('message')">One last thing →</button>
+    </section>
+
+    <section class="screen" id="message">
+      <div class="final-photo">
+  <img src="assets/nyomp.jpg" alt="Us ❤️">
+</div>
+
+      <p class="eyebrow">A LITTLE MESSAGE</p>
+      <h2>I wouldn't want to spend my time with anyone else<br><em>but</em> you.</h2>
+      <p class="love-note">
+        I'll always ask you out on a date in a special way, because you are special to me, and every moment spent with you, no matter how little or big they are, they matter to me.
+      </p>
+      <p class="signature">— yours, always gwyn♡</p>
+<p class="love-note">
+        make sure to read the bottom part too haha. see you tomorrow my baby!
+      </p>
+
+
+      <button class="restart" onclick="showScreen('welcome')">Read it again ↺</button>
+    </section>
+  </main>
+
+  <footer>made with a ridiculous amount of love, effort, craziness and more on chatgpt and coding skills ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
